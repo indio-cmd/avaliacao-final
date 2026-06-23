@@ -12,7 +12,7 @@ int main() {
  
     
     while (opcao != 6) {
-        std::cout << "\n--- Selva TopFightMMA ---" << std::endl;
+        std::cout << "--- Selva TopFightMMA ---" << std::endl;
         std::cout << "1 - Registrar lutador pelo nome" << std::endl;
         std::cout << "2 - retirar do evento" << std::endl;
         std::cout << "3 - Buscar lutador pelo nome" << std::endl;
@@ -26,7 +26,7 @@ int main() {
         if (opcao == 1) {
             
             if (totalRegistros < 10) {
-                std::cout << "\nNome do lutador: ";
+                std::cout << "Nome do lutador: ";
                 std::getline(std::cin, vetorNome[totalRegistros]);
                 std::cout << "Cartel: ";
                 std::cin >> vetorCartel[totalRegistros];
@@ -42,7 +42,7 @@ int main() {
         } 
         else if (opcao == 2) {
           
-            std::cout << "\nDigite o nome para cancelar: ";
+            std::cout << "Digite o nome para cancelar: ";
             std::string nomeBusca;
             std::getline(std::cin, nomeBusca);
             int achou = 0;
@@ -59,7 +59,7 @@ int main() {
         } 
         else if (opcao == 3) {
             
-            std::cout << "\nDigite o nome do lutador para buscar: ";
+            std::cout << "Digite o nome do lutador para buscar: ";
             std::string nomeBusca;
             std::getline(std::cin, nomeBusca);
             int achou = 0;
@@ -78,12 +78,12 @@ int main() {
         } 
         else if (opcao == 4) {
             
-            std::cout << "\n--- LISTA DE LUTADORES ---" << std::endl;
+            std::cout << "--- LISTA DE LUTADORES ---" << std::endl;
             if (totalRegistros == 0) {
                 std::cout << "Nenhum lutador cadastrado." << std::endl;
             } else {
                 for (int i = 0; i < totalRegistros; i++) {
-                    std::cout << "Lutador: " << vetorNome[i] << " | Cartel: " << vetorCartel[i] << " | Tempo de treino: " << vetorData[i] << " | Status: " << vetorStatus[i] << std::endl;
+                    std::cout << "Lutador: " << vetorNome[i] << "  Cartel: " << vetorCartel[i] << "  Tempo de treino: " << vetorData[i] << "  Status: " << vetorStatus[i] << std::endl;
                 }
             }
         } 
@@ -95,13 +95,13 @@ int main() {
                     contAtivas++;
                 }
             }
-            std::cout << "\nTotal de lutadores ativos: " << contAtivas << std::endl;
+            std::cout << "Total de lutadores ativos: " << contAtivas << std::endl;
         } 
         else if (opcao == 6) {
-            std::cout << "\nFim!" << std::endl;
+            std::cout << "Fim!" << std::endl;
         } 
         else {
-            std::cout << "\nOpcao incorreta!" << std::endl;
+            std::cout << "Opcao incorreta!" << std::endl;
         }
     }
  
