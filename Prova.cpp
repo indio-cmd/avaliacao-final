@@ -35,7 +35,7 @@ int main() {
                 std::getline(std::cin, vetorData[totalRegistros]);
                 vetorStatus[totalRegistros] = "Ativo";
                 totalRegistros++;
-                std::cout << "Jogador entrou no time" << std::endl;
+                std::cout << "lutador entrou no evento " << std::endl;
             } else {
                 std::cout << "Erro: Time lotado" << std::endl;
             }
