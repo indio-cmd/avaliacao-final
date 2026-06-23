@@ -4,7 +4,7 @@
 int main() {
     
     std::string vetorNome[10];
-    int vetorPessoas[10];
+    int vetorCartel[10];
     std::string vetorData[10];
     std::string vetorStatus[10];
     int totalRegistros = 0; 
@@ -29,7 +29,7 @@ int main() {
                 std::cout << "\nNome do lutador: ";
                 std::getline(std::cin, vetorNome[totalRegistros]);
                 std::cout << "Cartel: ";
-                std::cin >> vetorPessoas[totalRegistros];
+                std::cin >> vetorCartel[totalRegistros];
                 std::cin.ignore();
                 std::cout << "tempo de treino: ";
                 std::getline(std::cin, vetorData[totalRegistros]);
@@ -66,7 +66,7 @@ int main() {
             for (int i = 0; i < totalRegistros; i++) {
                 if (vetorNome[i] == nomeBusca) {
                     std::cout << "Nome: " << vetorNome[i] << std::endl;
-                    std::cout << "Cartel: " << vetorPessoas[i] << std::endl;
+                    std::cout << "Cartel: " << vetorCartel[i] << std::endl;
                     std::cout << "Tempo de treino: " << vetorData[i] << std::endl;
                     std::cout << "Status: " << vetorStatus[i] << std::endl;
                     achou = 1;
@@ -83,7 +83,7 @@ int main() {
                 std::cout << "Nenhum lutador cadastrado." << std::endl;
             } else {
                 for (int i = 0; i < totalRegistros; i++) {
-                    std::cout << "Lutador: " << vetorNome[i] << " | Cartel: " << vetorPessoas[i] << " | Tempo de treino: " << vetorData[i] << " | Status: " << vetorStatus[i] << std::endl;
+                    std::cout << "Lutador: " << vetorNome[i] << " | Cartel: " << vetorCartel[i] << " | Tempo de treino: " << vetorData[i] << " | Status: " << vetorStatus[i] << std::endl;
                 }
             }
         } 
